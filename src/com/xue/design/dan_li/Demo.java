@@ -2,6 +2,7 @@ package com.xue.design.dan_li;
 
 /**
  * 单例模式 饿汉模式
+ *
  * @Author xueshun
  * @Create 2018-03-27 10:21
  */
@@ -14,7 +15,10 @@ public class Demo {
     public Demo() {
     }
 
-    //返回实例对象
+    /**
+     * 返回实例对象
+     * @return
+     */
     public static Demo getInstance() {
         return instance;
     }
