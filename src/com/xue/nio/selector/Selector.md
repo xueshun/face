@@ -31,7 +31,7 @@ Selector是Java NIO中能够检测到多个NIO通道，并能够知晓通道是�
 1. Connect
 2. Accept
 3. Read
-4. Write
+4. Write<br>
 通道触发了一个事件意思是该事件已经就绪。
 所以，某个channel成功连接到另一个服务器称为“连接就绪”。
 一个server socket channel准备好接收新进入的连接称为“接收就绪”。
@@ -120,3 +120,5 @@ SelectionKey.channel()方法返回的通道需要转型成你要处理的类型�
 
 #### close()
 用完Selector后调用其close()方法会关闭该Selector，且使注册到该Selector上的所有SelectionKey实例无效。通道本身并不会关闭。
+
+转载自并发编程网 – ifeve.com本文链接地址: Java NIO系列教程（六） Selector
